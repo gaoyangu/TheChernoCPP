@@ -42,7 +42,27 @@ int main()
 }
 ```
 
-## 67. Union
+## 66. Type Punning
 
 ```cpp
+```
+
+## 67. Union
+
+- only have one member
+- want multiple ways to address that same data
+
+⭐[UnionPratice](./code/Union.cpp)
+
+```cpp
+struct Union{
+    union{
+        float a;
+        int b;
+    };
+};
+
+Union u;
+u.a = 2.0f;
+std::cout << u.a << ", " u.b << std::endl;
 ```
